@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Search recipe</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Delius+Swash+Caps&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Find your favourite recipe</h1>
+		</header>
+		<div class="spotify">
+			<iframe
+				style="border-radius: 12px"
+				src="https://open.spotify.com/embed/playlist/6p5UHaXElgFntROto33naZ?utm_source=generator"
+				width="70%"
+				height="152"
+				frameborder="0"
+				allowfullscreen=""
+				allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+				loading="lazy"
+			></iframe>
+		</div>
+
+		<div class="search-container">
+			<input type="text" placeholder="What will we eat today?" />
+			<button class="input-btn">🍳</button>
+			<div class="search-results-message"></div>
+		</div>
+		<div class="recipes-container"></div>
+		<div class="overlay">
+			<div class="modal-content"></div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
