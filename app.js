@@ -1,5 +1,11 @@
 let input = document.querySelector("input");
 
+input.addEventListener("keydown", (event) => {
+	if (event.key === "Enter") {
+		button.click();
+	}
+});
+
 const button = document.querySelector(".input-btn");
 
 button.addEventListener("click", () => {
