@@ -1,14 +1,12 @@
 let input = document.querySelector("input");
 
 const button = document.querySelector(".input-btn");
-const query = input.value;
-
-const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`;
 
 button.addEventListener("click", () => {
 	const recipesContainer = document.querySelector(".recipes-container");
 	const messageContainer = document.querySelector(".search-results-message");
-
+	const query = input.value;
+	const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`;
 	if (input.value === "") {
 		input.classList.add("error");
 		messageContainer.textContent = `Please enter meal or an ingredient...`;
